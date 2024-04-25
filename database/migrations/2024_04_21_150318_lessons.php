@@ -24,8 +24,9 @@ return new class extends Migration
             $table->integer('number_word_completed');
             $table->text('vocabulary_note');
             //Grammar
-            $table->boolean('is_study_grammar');
             $table->text('grammar_note');
+            $table->boolean('is_study_grammar');
+            $table->boolean('grammar_checked');
             //Listen
             $table->boolean('is_study_listen');
             $table->boolean('listen_checked');
