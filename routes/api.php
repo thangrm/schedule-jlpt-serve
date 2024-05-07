@@ -8,4 +8,5 @@ Route::post('/auth/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function (){
     Route::get('/schedules', [ScheduleController::class, 'schedules']);
     Route::post('/schedules', [ScheduleController::class, 'store']);
+    Route::delete('/schedules', [ScheduleController::class, 'delete']);
 });

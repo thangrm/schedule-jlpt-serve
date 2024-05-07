@@ -20,6 +20,12 @@ class DatabaseSeeder extends Seeder
             'email' => 'cavoinauchao@thuy.love.tkun',
             'password' => Hash::make('Tkunloveivy')
         ]);
+        User::factory()->create([
+            'name' => "Mr Ivy's Boyfriend",
+            'username' => 'moon',
+            'email' => 'thangrm@love.ivy',
+            'password' => Hash::make('Ivylovetkun')
+        ]);
 
         for ($i = 0; $i < 5; $i++) {
             Level::create([
